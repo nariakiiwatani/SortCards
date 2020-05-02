@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<script src="scripts/main.ts" defer></script>
+	</head>
+	<body>
+		<h1>カード並べ替え問題</h1>
+		<div id="wrapper">
+			<section id="editor">
+				<h2>並べ替えてください</h2>
+				<div class="trial">
+					<p class="cards">
+					</p>
+					<p class="gui">
+						<button class="submit">決定</button>
+						<button class="reset">初期配置にもどす</button>
+					</p> 
+					<p class="result">
+						　
+					</p>
+					<div class="template" style="display:none">
+						<span class="card"></span>
+					</div>
+				</div>
+			</section>
+			<section id="statistics">
+				<h2>集計結果</h2>
+				<button class="clear">全て消す</button>
+				<p>見つけた組み合わせの数: <span class="count">0</span></p>
+				<div class="list">
+				</div>
+				<div class="template", style="display:none">
+					<span class="found_pattern"></span>
+				</div>
+			</section>
+			<section id="answer">
+				<h2>答え合わせ</h2>
+				<details>
+					<summary>組み合わせの数: <span class="count">0</span></summary>
+					<div class="list">
+					</div>
+					<div class="template", style="display:none">
+						<span class="found_pattern"></span>
+					</div>
+				</details>
+			</section>
+		</div>
+	</body>
+</html>

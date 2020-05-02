@@ -1,0 +1,56 @@
+#wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+#editor {
+	flex-grow: 1;
+	.success {
+		color: green;
+	}
+	.error {
+		color: red;
+	}
+}
+
+.cards {
+	border-collapse: separate;
+	border-spacing: 0.5rem 0;
+}
+.card {
+	user-select: none;
+
+	display: table-cell;
+
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+
+	width: 2rem;
+	height: 2.828rem;
+	margin: 0 5px;
+	background-color: rgb(250,220,150);
+	border: outset rgb(100,100,100) 3px;
+	border-radius: 5px;
+}
+
+#statistics, #answer {
+	flex-grow: 1;
+	.list {
+		display: inline-flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: calc((2rem + 12px)*6);
+	}
+	.found_pattern {
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin-right: 3px;
+		margin-bottom: 3px;
+		padding: 0.25rem;
+		background-color: rgb(250,220,150);
+		border: outset rgb(100,100,100) 3px;
+		border-radius: 5px;
+	}
+}
